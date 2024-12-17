@@ -1,0 +1,49 @@
+{% extends 'index.html' %}
+{% block content %}
+ <!-- Main content -->
+ <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-6">
+          <!-- general form elements -->
+          <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Add student</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form method="POST" action="/adminapp/student/">
+                {% csrf_token %}
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="student_class">Class</label>
+                    <input type="text" class="form-control" id="student_class" name="student_class" placeholder="Enter class" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="division">Division</label>
+                    <input type="text" class="form-control" id="division" name="division" placeholder="Enter division" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
