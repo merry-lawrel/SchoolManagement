@@ -16,7 +16,7 @@
 
 - **Backend**: Django 4.x
 - **Frontend**: HTML, CSS, JavaScript
-- **Database**: SQLite (or any preferred database like PostgreSQL)
+- **Database**: SQLite
 - **Authentication**: Django’s built-in user authentication system
 
 ## Installation
