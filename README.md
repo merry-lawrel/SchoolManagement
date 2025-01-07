@@ -122,9 +122,6 @@ We welcome contributions! If you'd like to contribute to this project, follow th
 4. Push to the branch (`git push origin feature-xyz`).
 5. Open a pull request to merge your changes.
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgements
 - **Django** - Web framework used.
 - **SQLite** - Database used.
